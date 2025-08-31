@@ -1,37 +1,26 @@
-package JavaHashSet; // project created in eclipse
-import java.util.HashSet; // imported HashSet class
-import java.util.Collection; // imported Collection class
+// Java Data Structures: ArrayList //
 
-public class MyHashSet { //created public class 'MyHashSet'
+package JavaDataStructures; // project made when setting up Java
 
-	public static void main(String[] args) {// reads, runs & executes code
-	
-	// created an object of imported class named 'myPlaces', set as <Strng>
-	// HahSet<String>
-		HashSet<String> myPlaces = new HashSet<String>();
+import java.util.HashSet; // imported the HashSet class
+
+public class MyHashSet {// created a public class called MyHashSet
+
+	public static void main(String[] args) {// reads,run & executes code
 		
-	// object calls onto the '.add' function to add names of places inside the object
-		myPlaces.add("Dublin");
-		myPlaces.add("Milan");
-		myPlaces.add("Amsterdam");
-		myPlaces.add("Lagos");
-		myPlaces.add("London");
-		myPlaces.add("Milan");
-	
-		myPlaces.remove("London"); // got the object to call onto the '.remove' function to remove London from list in the object 
+	// created object of the HashSet imported class named 'cars' //
+		HashSet<String> cars = new HashSet<String>();
 		
-		System.out.println(myPlaces.contains("Instanbul")); // Displays true or false if it as Instanbul on the list of places put in the object
-		
-		System.out.println(myPlaces); // Display the places in the object 'myPlaces'
+// used the object 'cars' to call onto the add function and put the names in String (txt) values
+		cars.add("Volvo"); // added name 'volvo' in brackets with quotations " "
+		cars.add("Seat");// added name 'seat' in brackets with quotations " "
+		cars.add("Volvo");// added name 'volvo' in brackets with quotations " "
+		cars.add("Mazda");// added name 'Mazda' in brackets with quotations " "
+		cars.add("Cetreon");//added name 'cetreon' in brackets with quotations " "
+		System.out.println(cars); // display the names in the cars objects
+	// with HashSet it'll display the names but if there are duplicates, it'll display it once
 		
 
 	}
 
 }
-
-// Result:
-// false
-// [Milan, Amsterdam, Dublin, Lagos]
-
-// myPlaces.clear(); - this clears all data in the object
-// System.out.println(myPlaces.size()); - this gets the amount of places in the object
